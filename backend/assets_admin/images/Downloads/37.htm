@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Halaman Admin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="http://localhost:8000/assets/img/pertamina.png" rel="icon">
+  <link href="http://localhost:8000/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="http://localhost:8000/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:8000/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="http://localhost:8000/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="http://localhost:8000/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="http://localhost:8000/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="http://localhost:8000/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="http://localhost:8000/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="http://localhost:8000/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.2.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== --></head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="http://localhost:8000/assets/img/pertamina.png" alt="Images" width="40px">
+        <span class="d-none d-lg-block" style="color: red">PERTAMINA</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item dropdown pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Pirdaus</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Pirdaus</h6>
+              <span>Operation Head</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="http://localhost:8000/logout">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header>  <!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link " href="http://localhost:8000/dashboard">
+                <i class="bi bi-grid"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="http://localhost:8000/data-user">
+                <i class="bi bi-person"></i>
+                <span>Data User</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="http://localhost:8000/data-reffuler">
+                <i class="bi bi-list-stars"></i>
+                <span>Data Refueller</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="http://localhost:8000/data-kerusakan-unit">
+                <i class="bi bi-list-stars"></i>
+                <span>Data Kerusakan Unit</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="http://localhost:8000/data-ceklis">
+                <i class="bi bi-file-earmark-pdf"></i>
+                <span>Laporan Checklist Refueller</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="http://localhost:8000/lap-kerusakan">
+                <i class="bi bi-file-earmark-pdf"></i>
+                <span>Laporan Kerusakan</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="http://localhost:8000/lap-kerusakan-unit">
+                <i class="bi bi-file-earmark-pdf"></i>
+                <span>Laporan Kerusakan Unit</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="http://localhost:8000/logout">
+                <i class="bi bi-dash-circle"></i>
+                <span>Sign Out</span>
+            </a>
+        </li><!-- End Error 404 Page Nav -->
+
+    </ul>
+    
+    
+</aside>
+  <!-- End Sidebar-->
+
+  <main id="main" class="main">
+    
+<div class="pagetitle">
+    <h1>Edit Data User</h1>
+  </div><!-- End Page Title -->
+
+<section class="section">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"></h5></h5>
+            
+
+            <form action="http://localhost:8000/update-data-user/37" method="post" enctype="multipart/form-data" class="row g-3">
+                <input type="hidden" name="_token" value="x5zevz5VMClidxm6YAUAn7UuAQ90UC4MSryiAGzN">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="inputEmail4" class="form-label">Nama Lengkap</label>
+                            <input type="text" name="nama_user" class="form-control" id="nama_user" value="anonim">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputEmail4" class="form-label">Username</label>
+                            <input type="text" name="username" class="form-control" id="username" value="anonim">
+                        </div>
+
+                    </div>
+               
+                <div class="col-md-6">
+                    
+                    <div class="form-group">
+                        <label for="inputPassword4" class="form-label">Level</label>
+                        <select class="form-control" name="level" id="level" required>
+                            <option value="" selected disabled>- Pilih Level -</option>
+                            <option value="Operation Head">Operation Head</option>
+                            <option value="Supervisor">Supervisor</option>
+                            <option value="Certified Refuelling Operator">Certified Refuelling Operator</option>
+                            <option value="Maintenance">Maintenance</option>
+                        </select>
+                        <script>
+                            document.getElementById('level').value = "Supervisor";
+                        </script>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputEmail4" class="form-label">Tanda Tangan</label><br>
+                      <img src="http://localhost:8000/assets/img" width="100px" alt=""><br>
+                      <input type="file" name="tanda_tangan" class="form-control" id="tanda_tangan">
+                  </div>
+
+                </div>
+                
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-sm">Update</button>
+                <button type="reset" class="btn btn-secondary btn-sm">Batal</button>
+            </div>
+                
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  
+   <!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="http://localhost:8000/assets/vendor/apexcharts/apexcharts.min.js"></script>
+<script src="http://localhost:8000/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="http://localhost:8000/assets/vendor/chart.js/chart.min.js"></script>
+<script src="http://localhost:8000/assets/vendor/echarts/echarts.min.js"></script>
+<script src="http://localhost:8000/assets/vendor/quill/quill.min.js"></script>
+<script src="http://localhost:8000/assets/vendor/simple-datatables/simple-datatables.js"></script>
+<script src="http://localhost:8000/assets/vendor/tinymce/tinymce.min.js"></script>
+<script src="http://localhost:8000/assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="http://localhost:8000/assets/js/main.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>  
+  
+  
+</body>
+
+</html>
